@@ -1,0 +1,179 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.JadwalShalat_UASAKB" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/tia_maria</item>
+        <item name="colorPrimaryVariant">@color/tia_maria</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="roundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ThemeOverlay.MaterialComponents.MaterialAlertDialog" parent="Base.ThemeOverlay.MaterialComponents.MaterialAlertDialog" tools:ignore="PrivateResource">
+        <item name="materialAlertDialogTitlePanelStyle">
+            @style/MaterialAlertDialog.MaterialComponents.Title.Panel
+        </item>
+        <item name="materialAlertDialogTitleIconStyle">
+            @style/MaterialAlertDialog.MaterialComponents.Title.Icon
+        </item>
+        <item name="materialAlertDialogTitleTextStyle">
+            @style/MaterialAlertDialog.MaterialComponents.Title.Text
+        </item>
+    </style>
+
+    <style name="ThemeOverlay.MaterialComponents.MaterialAlertDialog.Centered" parent="Base.ThemeOverlay.MaterialComponents.MaterialAlertDialog" tools:ignore="PrivateResource">
+        <item name="materialAlertDialogTitlePanelStyle">
+            @style/MaterialAlertDialog.MaterialComponents.Title.Panel.CenterStacked
+        </item>
+        <item name="materialAlertDialogTitleIconStyle">
+            @style/MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked
+        </item>
+        <item name="materialAlertDialogTitleTextStyle">
+            @style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked
+        </item>
+    </style>
+
+    <style name="TextAppearance.straight.Bold.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/straight_ahead_regular</item>
+    </style>
+
+    <style name="TextAppearance.straight.Bold.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/straight_ahead_regular</item>
+    </style>
+
+    <style name="TextAppearance.roboto.Italic.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/robotocondenseditalic</item>
+    </style>
+
+    <style name="TextAppearance.roboto.Italic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_condensed_lightitalic</item>
+    </style>
+
+    <style name="TextAppearance.Roboto.bold.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TextAppearance.Sketsa.Bold.Title" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textSize">90sp</item>
+        <item name="fontFamily">@font/sketsa_ramadhan</item>
+    </style>
+
+    <!-- Headline 4 -->
+    <style name="TextAppearance.Roboto.Light.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="TextAppearance.Roboto.bold.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!-- Headline 5 -->
+    <style name="TextAppearance.Roboto.Regular.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+        <style name="TextAppearance.Roboto.Medium.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- Headline 6 -->
+    <style name="TextAppearance.Roboto.Regular.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextAppearance.Roboto.Medium.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="TextAppearance.Roboto.Bold.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TextAppearance.Regular.Subtitle3" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextAppearance.Roboto.Bold.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!-- Body 1 -->
+    <style name="TextAppearance.Roboto.Light.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="TextAppearance.Roboto.Regular.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextAppearance.Roboto.Medium.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- Body 2 -->
+    <style name="TextAppearance.Roboto.Regular.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextAppearance.Roboto.Medium.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- Caption -->
+    <style name="TextAppearance.Roboto.Light.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="TextAppearance.Roboto.Regular.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextAppearance.Roboto.Medium.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- Overline -->
+    <style name="TextAppearance.Roboto.Light.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+
+</resources>

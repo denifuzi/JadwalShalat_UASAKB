@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onboard2"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/tangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tangan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_55dp"
+        />
+
+    <TextView
+        android:id="@+id/tvHadis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hadis"
+        app:layout_constraintTop_toBottomOf="@id/tangan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_140dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.roboto.Italic.Headline6"
+        />
+
+    <TextView
+        android:id="@+id/tvHr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hr"
+        app:layout_constraintTop_toBottomOf="@id/tvHadis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_10dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.roboto.Italic.Body2"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

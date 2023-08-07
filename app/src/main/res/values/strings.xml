@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Islamic Time</string>
+    <string name="islamic">Islamic</string>
+    <string name="time">Time</string>
+    <string name="next">Next</string>
+    <string name="asalamualaikum">Assalamualaikum</string>
+    <string name="selamat">Selamat Datang di Aplikasi\nIslamic Time</string>
+    <string name="hadis">“Siapa saja yang menjaga salat, maka\ndia akan mendapatkan cahaya, petunjuk,\ndan keselamatan pada hari kiamat”</string>
+    <string name="hr">H.R Ahmad, dari \'Abdullah bin \n\'Umar radhiyallahu \'anhuma</string>
+    <string name="gps">Izinkan GPS nya dulu yuk,\nuntuk mendapatkan waktu shalat\nyang pas untuk kamu</string>
+    <string name="lokasi">Coblong, Kota Bandung</string>
+    <string name="_16_30">Ashar - 16:30</string>
+    <string name="hitung">1:50 Menuju</string>
+    <string name="magrib">Maghrib</string>
+    <string name="tanggal">Sabtu, 29 Juli 2023</string>
+    <string name="imsak">Imsak</string>
+    <string name="_04_30">04:30</string>
+    <string name="_18_00">18:00</string>
+    <string name="title_monthly">Sebulan</string>
+    <string name="title_qibla">Kiblat</string>
+    <string name="title_home">Home</string>
+    <string name="tvTitleJadwal">Jadwal Shalat Sebulan (Local Time)</string>
+    <string name="tvBulan">Agustus</string>
+    <string name="date">Sabtu, 01 Juni 2023</string>
+    <string name="box_imsak">Imsak</string>
+    <string name="_04_33">04:33</string>
+    <string name="subuh">Subuh</string>
+    <string name="_05_00">05:00</string>
+    <string name="_12_00">12:00</string>
+    <string name="dzuhur">Dzuhur</string>
+    <string name="ashar">Ashar</string>
+    <string name="_15_00">15:00</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="_17_56">17:56</string>
+    <string name="isya">Isya</string>
+    <string name="_19_00">19:00</string>
+</resources>

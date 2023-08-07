@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/homebg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPin"
+        style="@style/TextAppearance.Roboto.Regular.Body2"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_30dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:drawableStart="@drawable/pin"
+        android:drawablePadding="@dimen/_8dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/tvLocalTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLtime"
+        style="@style/TextAppearance.Roboto.Medium.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_30dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:text="@string/_18_00"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLocalTime"
+        style="@style/TextAppearance.Roboto.Regular.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_2dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:text="(Local Time)"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLtime" />
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/ivLoc"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="@dimen/_16dp"-->
+    <!--        android:src="@drawable/location"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/tvPin" />-->
+
+    <TextView
+        android:id="@+id/tvJam"
+        style="@style/TextAppearance.Roboto.bold.Headline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:text="@string/_16_30"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLocalTime" />
+
+    <TextView
+        android:id="@+id/tvHitung"
+        style="@style/TextAppearance.Roboto.Regular.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:text="@string/hitung"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/tvSolat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvSolat" />
+
+    <TextView
+        android:id="@+id/tvSolat"
+        style="@style/TextAppearance.Roboto.Bold.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4dp"
+        android:layout_marginTop="@dimen/_4dp"
+        android:text="@string/magrib"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/tvHitung"
+        app:layout_constraintTop_toBottomOf="@id/tvJam" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvBox"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_40dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:background="@color/philippine_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSolat">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_20dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvtanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:gravity="center"
+                android:text="@string/tanggal"
+                android:textAppearance="@style/TextAppearance.Roboto.Medium.Body1"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vline"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@color/silver_voil"
+                app:layout_constraintEnd_toEndOf="@id/tvtanggal"
+                app:layout_constraintStart_toStartOf="@id/tvtanggal"
+                app:layout_constraintTop_toBottomOf="@id/tvtanggal" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvImsak"
+                style="@style/TextAppearance.Roboto.Medium.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_36dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:text="@string/imsak"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vline" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvJImsak"
+                style="@style/TextAppearance.Roboto.Medium.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_36dp"
+                android:text="@string/_04_30"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vline" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSubuh"
+                style="@style/TextAppearance.Roboto.Medium.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_36dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:text="@string/subuh"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvImsak" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvJSubuh"
+                style="@style/TextAppearance.Roboto.Medium.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_36dp"
+                android:text="@string/_04_30"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvImsak" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDzuhur"
+                style="@style/TextAppearance.Roboto.Medium.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_36dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:text="@string/dzuhur"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSubuh" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvJDzuhur"
+                style="@style/TextAppearance.Roboto.Medium.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_36dp"
+                android:text="@string/_04_30"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSubuh" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvAshar"
+                style="@style/TextAppearance.Roboto.Medium.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_36dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:text="@string/ashar"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDzuhur" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvJAshar"
+                style="@style/TextAppearance.Roboto.Medium.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_36dp"
+                android:text="@string/_04_30"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDzuhur" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvMaghrib"
+                style="@style/TextAppearance.Roboto.Medium.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_36dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:text="@string/maghrib"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAshar" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvJMaghrib"
+                style="@style/TextAppearance.Roboto.Medium.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_36dp"
+                android:text="@string/_04_30"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAshar" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvIsya"
+                style="@style/TextAppearance.Roboto.Medium.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_36dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:text="@string/isya"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvMaghrib" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvJIsya"
+                style="@style/TextAppearance.Roboto.Medium.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_36dp"
+                android:text="@string/_04_30"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvMaghrib" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
